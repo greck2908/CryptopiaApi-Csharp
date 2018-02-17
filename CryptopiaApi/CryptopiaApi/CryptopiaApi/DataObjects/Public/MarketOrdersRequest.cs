@@ -8,12 +8,12 @@ namespace Cryptopia.API.DataObjects
 {
 	public class MarketOrdersRequest : IRequest
 	{
-		public MarketOrdersRequest(int tradePair, int? orderCount = null)
+		public MarketOrdersRequest(string tradePair, int? orderCount = null)
 		{
 			TradePairId = tradePair;
 			OrderCount = orderCount;
 		}
-		public int TradePairId { get; set; }
+		public string TradePairId { get; set; }
 		public int? OrderCount { get; set; }
 	}
 }
